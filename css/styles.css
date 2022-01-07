@@ -6,18 +6,16 @@
 
 body {
     margin: 0;
+    background-color: #eee;
     font-family: "Lato", sans-serif;
 }
 
 .layoutlist {
     list-style: none;
+    padding: 0;
 }
 
 #header {
-    background-color: #eee;
-}
-
-#inner-header {
     display: flex;
     width: 100rem;
     max-width: 95vw;
@@ -36,19 +34,19 @@ body {
 }
 
 #nav-bar {
-    width: 22rem;
+    width: 24rem;
 }
 
 #nav-bar ul {
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
     height: 100%;
     font-size: 1.5rem;
-}
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+} 
 
 #nav-bar a {
     text-decoration: none;
@@ -89,7 +87,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 6rem;
+    height: 6.1rem;
 }
 
 #form input {
@@ -108,40 +106,67 @@ body {
 #submitbutton {
     background-color: orange;
     width: 10rem;
-    height: 2.5rem;
+    height: 2.75rem;
+}
+
+#featured-list {
+    width: 70rem;
+    max-width: 99%;
+    max-height: 15rem;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#featured-list > li {
+    padding: 1rem;
+    margin: 0;
+    width: 20rem; 
+    max-width: 100%;
+    text-align: center;
+}
+
+.featureditem > i {
+    color: orange;
+}
+
+.featureddescription h3 {
+    margin: 1rem 0 0 0;
+}
+
+.featureddescription p {
+    margin: 0;
+}
+
+#video-container {
+    width: 55rem;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+#video-container > iframe {
+    aspect-ratio: 16 / 9;
+    width: 100%;
 }
 
 @media (max-width: 950px) {
-    #inner-header {
+    #logo {
+        margin-top: 0.3rem;
+        width: 18rem;
+    }
+
+    #header {
         max-width: 97vw;
         padding: 1.25rem 0;
     }
 
     #nav-bar {
-        width: 19rem;
+        width: 18rem;
     }
 
     #nav-bar ul {
-        font-size: 1.3rem;
-    }
-
-    #calltoaction h1 {
-        font-size: 2.5rem;
-    }
-}
-
-@media (max-width: 750px) {
-    #inner-header {
-        max-width: 97.5vw;
-        padding: 1.25rem 0;
-    }
-
-    #nav-bar {
-        width: 19rem;
-    }
-
-    #nav-bar ul {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     #calltoaction h1 {
